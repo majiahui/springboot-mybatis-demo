@@ -7,18 +7,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.jh.Application;
-import com.jh.domain.City;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = Application.class)
-public class CityServiceTest {
+public class BlogServiceTest {
 
 	@Autowired
-	private CityService cityService;
-
+	private BlogService blogService;
+	
 	@Test
 	public void test1() {
-		City city = cityService.getCityByState("CA");
-		System.out.println(city);
+		blogService.getBlog(1L);
 	}
 }
