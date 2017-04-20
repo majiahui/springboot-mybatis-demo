@@ -12,7 +12,7 @@ public class BlogService {
 
 	@Autowired
 	private BlogDao blogDao;
-	
+
 	@Transactional
 	public Blog getBlog(Long id) {
 		Blog b1 = blogDao.getBlog(id);
@@ -20,5 +20,11 @@ public class BlogService {
 		Blog b2 = blogDao.getBlog(id);
 		System.out.println(b2);
 		return b2;
+	}
+
+	@Transactional
+	public Blog update(Blog blog) {
+		blogDao.update(blog);
+		return blogDao.getBlog(blog.getId());
 	}
 }

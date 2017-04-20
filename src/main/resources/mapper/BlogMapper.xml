@@ -4,4 +4,8 @@
 	<select id="selectBlog" resultType="Blog">
 		select * from blog where id = #{id}
 	</select>
+	
+	<update id="update">
+		update blog set title = #{ title:VARCHAR } where id = #{id:BIGINT}
+	</update>
 </mapper>
