@@ -1,17 +1,11 @@
 package com.jh.service;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.jh.Application;
 import com.jh.domain.Blog;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = Application.class)
-public class BlogServiceTest {
+public class BlogServiceTest extends SpringBaseTest {
 
 	@Autowired
 	private BlogService blogService;
@@ -25,7 +19,7 @@ public class BlogServiceTest {
 	public void test_update() {
 		Blog aBlog = new Blog();
 		aBlog.setId(1L);
-		aBlog.setTitle("aaa333");
+		aBlog.setTitle("aaa3333666999999999");
 		Blog blog = blogService.update(aBlog);
 		System.out.println(blog);
 	}
