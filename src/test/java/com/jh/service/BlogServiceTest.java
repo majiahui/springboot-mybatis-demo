@@ -22,5 +22,6 @@ public class BlogServiceTest extends SpringBaseTest {
 		aBlog.setTitle("aaa3333666999999999");
 		Blog blog = blogService.update(aBlog);
 		System.out.println(blog);
+		System.out.println(blogService);
 	}
 }
