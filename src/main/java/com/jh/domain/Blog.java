@@ -2,29 +2,29 @@ package com.jh.domain;
 
 public class Blog {
 
-	private Long id;
-	
-	private String title;
+    private Long id;
 
-	public Long getId() {
-		return id;
-	}
+    private String title;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	@Override
-	public String toString() {
-		return "Blog [id=" + id + ", title=" + title + "]";
-	}
-	
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return "Blog [id=" + id + ", title=" + title + "]";
+    }
+
 }
